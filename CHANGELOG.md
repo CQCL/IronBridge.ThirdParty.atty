@@ -1,3 +1,10 @@
+# 0.2.14 (with support for SGX)
+* sburton84: Add support for SGX (using the x86_64-fortanix-unknown-sgx target)
+```
+Removed: #[cfg(target_arch = "wasm32")]
+  Added: #[cfg(any(target_arch = "wasm32", target_env = "sgx"))]
+```
+
 # 0.2.14
 
 * add support for [RustyHermit](https://github.com/hermitcore/libhermit-rs), a Rust-based unikernel [#41](https://github.com/softprops/atty/pull/41)
